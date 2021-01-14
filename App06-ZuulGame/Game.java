@@ -1,4 +1,4 @@
-/**
+ /**
  *  This class is the main class of the "World of Zuul" application. 
  *  "World of Zuul" is a very simple, text based adventure game.  Users 
  *  can walk around some scenery. That's all. It should really be extended 
@@ -21,7 +21,6 @@ public class Game
 {
     private Parser parser;
     private Room currentRoom;
-        
     /**
      * Create the game and initialise its internal map.
      */
@@ -29,6 +28,7 @@ public class Game
     {
         createRooms();
         parser = new Parser();
+        createCommands();
     }
 
     /**
@@ -36,30 +36,63 @@ public class Game
      */
     private void createRooms()
     {
-        Room outside, theater, pub, lab, office;
+        Room home, outside, park, university, mcdonalds, pub, tesco, abandoned_house, 
+        petrol_station, barbers,cinema, office, train_station, police_station, 
+        car_park,woods;
       
         // create the rooms
-        outside = new Room("outside the main entrance of the university");
-        theater = new Room("in a lecture theater");
-        pub = new Room("in the campus pub");
-        lab = new Room("in a computing lab");
-        office = new Room("in the computing admin office");
+        home = new Room("You are currently in your home. If you go north you can go outside", 
+        Items.AXE);
+        outside = new Room("You are outside, east of you is the park.", 
+        Items.NONE);
+        park = new Room("You are now in the park. West of you is the University.", 
+        Items.NONE);
+        university = new Room("You are now at the University. West of you is McDonalds", 
+        Items.BACKPACK);
+        mcdonalds = new Room("You are now at McDonalds. East of you is the pub.", 
+        Items.BURGER);
+        pub = new Room("You are now at the pub. South of you is Tesco.", 
+        Items.DRINK);
+        tesco = new Room("You are now at Tesco. South of you is an Abandoned House.", 
+        Items.DRINK);
+        abandoned_house = new Room("You are now at the Abandoned House. South of you is a Petrol Station.", 
+        Items.TORCH);
+        petrol_station = new Room("You are now at the Petrol Station. North of you is the Barbers.", 
+        Items.NONE);
+        barbers = new Room("You are now at the Barbers. North of you is the Cinema.", 
+        Items.NONE);
+        cinema = new Room("You are now at the Cinema. North of you is the Office.", 
+        Items.TORCH);
+        office = new Room("You are now at the Office. West of you is the Train Station.", 
+        Items.BANDAGES);
+        train_station = new Room("You are now at the Train Station. South of you is the Police Station.", 
+        Items.NONE);
+        police_station = new Room("You are now at Police Station. East of you is a Car Park.", 
+        Items.GUN);
+        car_park = new Room("You are now at the Car Park. East of you are the woods.", 
+        Items.NONE);
+        woods = new Room("You have reached the final destination, now you can escape the city that was overtaken by the zombies.", 
+        Items.NONE);
         
         // initialise room exits
-        outside.setExit("east", theater);
-        outside.setExit("south", lab);
-        outside.setExit("west", pub);
-
-        theater.setExit("west", outside);
-
-        pub.setExit("east", outside);
-
-        lab.setExit("north", outside);
-        lab.setExit("east", office);
-
-        office.setExit("west", lab);
-
-        currentRoom = outside;  // start game outside
+        home.setExit("north", outside);
+        outside.setExit("east", park);
+        park.setExit("west", university);
+        university.setExit("west", mcdonalds);
+        mcdonalds.setExit("east", pub);
+        pub.setExit("south", tesco);
+        tesco.setExit("south", abandoned_house);
+        abandoned_house.setExit("west", petrol_station);
+        petrol_station.setExit("north", barbers);
+        barbers.setExit("north", cinema);
+        cinema.setExit("north", office);
+        office.setExit("west", train_station);
+        train_station.setExit("south", police_station);
+        police_station.setExit("east", car_park);
+        car_park.setExit("east", woods);
+        
+        
+        currentRoom = home;  // start game outside
     }
 
     /**
@@ -95,7 +128,14 @@ public class Game
         System.out.println();
         System.out.println(currentRoom.getLongDescription());
     }
-
+    
+    /**
+     * Create the game commands
+     */
+    private void createCommands()
+    {    
+    }
+    
     /**
      * Given a command, process (that is: execute) the command.
      * @param command The command to be processed.

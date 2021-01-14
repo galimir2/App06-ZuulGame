@@ -20,7 +20,18 @@ public class Parser
 {
     private CommandWords commands;  // holds all valid command words
     private Scanner reader;         // source of command input
-
+    
+    //All the commands that the user will be able to use. 
+    public static final char CLEAR_CODE = '\u000c';
+    public static final String MOVE = "move";
+    public static final String LOOK = "look";
+    public static final String PICK_UP= "pickup";
+    public static final String NORTH = "north";
+    public static final String SOUTH = "south";
+    public static final String WEST = "west";
+    public static final String EAST = "east";
+    public static final String SEARCH = "search";
+    
     /**
      * Create a parser to read from the terminal window.
      */
