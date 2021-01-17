@@ -37,11 +37,6 @@ public class Room
         exits = new HashMap<>();
     }
     
-    public void setName(String name)
-    {
-        this.name = name;
-    }
-    
     public String getName()
     {
         return name;
@@ -63,7 +58,7 @@ public class Room
      */
     public String getShortDescription()
     {
-        return name;
+        return description;
     }
 
     /**
@@ -74,7 +69,7 @@ public class Room
      */
     public String getLongDescription()
     {
-        return "You are " + name + description + ".\n" + getExitString();
+        return "You are "+ name + ".\n" + getExitString();
     }
 
     /**
@@ -119,6 +114,10 @@ public class Room
     {
         this.item = item;
     }
-
+    
+    public void printItems()
+    {
+        System.out.println("Items in room: " + item);
+    }
 }
 
