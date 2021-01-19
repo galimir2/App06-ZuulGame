@@ -25,7 +25,7 @@ public class Map
         car_park,woods;
       
         // create the rooms
-        home = new Room("You are currently in your . If you go north you can go outside", 
+        home = new Room("You are currently in your Home. If you go north you can go outside", 
         Items.AXE);
         outside = new Room("outside, east of you is the park", Items.NONE);
         park = new Room("now in the park. West of you is the University", Items.NONE);

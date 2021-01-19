@@ -129,6 +129,7 @@ public class Game
         System.out.println("Type 'pick' to pick up the item in the room.");
         System.out.println("Type 'go' and the direction to where you would like to move.");
         System.out.println("Type 'quit' to quit the game.");
+        System.out.println("Type 'pickup' to pickup the item that is in the room.");
     }
 
     /** 
