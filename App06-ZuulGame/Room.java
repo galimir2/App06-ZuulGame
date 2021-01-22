@@ -1,6 +1,7 @@
+import javax.lang.model.element.Name;
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashMap;
-import java.util.Iterator;
 
 /**
  * Class Room - a room in an adventure game.
@@ -34,7 +35,7 @@ public class Room
      */
     public Room(String name, Items item) 
     {
-        this.item = item;
+        holdItem = item;
         
         this.name = name;
         exits = new HashMap<>();
@@ -118,7 +119,7 @@ public class Room
         this.item = item;
     }
     
-    public void setHoldItem()
+    public void setHoldItem(Items item)
     {
         holdItem = item;
     }
@@ -135,7 +136,7 @@ public class Room
     
     public void printItems()
     {
-        System.out.println("Items in room: " + item);
+        System.out.println("Items in room: " + holdItem);
     }
 }
 

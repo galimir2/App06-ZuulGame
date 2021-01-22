@@ -66,7 +66,8 @@ public class Game
     {
         System.out.println();
         System.out.println("Welcome to the Zombie Apocalypse!");
-        System.out.println("Zombie Apocalypse is a game where you have woken up in a world that has been overtaken by zombies.");
+        System.out.println("Zombie Apocalypse is an amazing game.");
+        System.out.println("You have woken up in a world that has been overtaken by zombies.");
         System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
         System.out.println();
         System.out.println(currentRoom.getLongDescription());
@@ -108,8 +109,8 @@ public class Game
                 printItems();
                 break;
                 
-            case PICKUP:
-                pickupItem();
+            case TAKE:
+                takeItem();
                 break;  
                 
             case QUIT:
@@ -137,8 +138,8 @@ public class Game
         System.out.println("Type 'look' to look around for items in the room.");
         System.out.println("Type 'pick' to pick up the item in the room.");
         System.out.println("Type 'go' and the direction to where you would like to move.");
+        System.out.println("Type 'take' to pickup the item that is in the room.");
         System.out.println("Type 'quit' to quit the game.");
-        System.out.println("Type 'pickup' to pickup the item that is in the room.");
     }
 
     /** 
@@ -168,14 +169,19 @@ public class Game
         }
     }
     
-    private void pickupItem()
+    private void takeItem()
     {
         System.out.println("\nYou have picked up the " + 
         currentRoom.getHoldItem() + "\n");
         
-        player.pickupItem(currentRoom.getHoldItem());
+        player.takeItem(currentRoom.getHoldItem());
         currentRoom.removeHoldItem();
-        
+        printStats();
+    }
+    
+    public void printStats()
+    {
+        player.printStats();
     }
     
     /** 
