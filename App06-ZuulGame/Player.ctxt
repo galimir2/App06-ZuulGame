@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Player
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Player\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=name
+comment1.target=Player(java.lang.String)
+comment2.params=targetItem
+comment2.target=boolean\ hasItem(Items)
+comment3.params=item
+comment3.target=void\ pickupItem(Items)
+comment4.params=amount
+comment4.target=void\ increaseScore(int)
+comment5.params=score
+comment5.target=void\ setScore(int)
+comment6.params=
+comment6.target=int\ getScore()
+comment7.params=maximumhealth
+comment7.target=void\ setMaxiumHealth(int)
+comment8.params=
+comment8.target=int\ getMaximumHealth()
+comment9.params=
+comment9.target=void\ printStats()
+numComments=10

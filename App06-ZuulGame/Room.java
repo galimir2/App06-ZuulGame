@@ -23,6 +23,9 @@ public class Room
     private HashMap<String, Room> exits;        // stores exits of this room.
     private Items item;
     
+    //This shows the item that is in the room
+    private Items holdItem;
+    
     /**
      * Create a room described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
@@ -113,6 +116,21 @@ public class Room
     public void setItem(Items item)
     {
         this.item = item;
+    }
+    
+    public void setHoldItem()
+    {
+        holdItem = item;
+    }
+    
+    public Items getHoldItem()
+    {
+        return holdItem;
+    }
+    
+    public void removeHoldItem()
+    {
+        holdItem = Items.NONE;
     }
     
     public void printItems()

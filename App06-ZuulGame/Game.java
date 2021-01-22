@@ -1,3 +1,4 @@
+
  /**
  *  This class is the main class of the "World of Zuul" application. 
  *  "World of Zuul" is a very simple, text based adventure game.  Users 
@@ -22,6 +23,7 @@ public class Game
     private Map map;
     private Parser parser;
     private Room currentRoom;
+    private Player player;
     
     /**
      * Create the game and initialise its internal map.
@@ -32,6 +34,8 @@ public class Game
         parser = new Parser();
         currentRoom = map.getStartRoom();
         createCommands();
+        player = new Player("Richard");
+        play();
     }
 
     /**
@@ -99,14 +103,19 @@ public class Game
             case GO:
                 goRoom(command);
                 break;
-
-            case QUIT:
-                wantToQuit = quit(command);
-                break;
                 
             case LOOK:
                 printItems();
                 break;
+                
+            case PICKUP:
+                pickupItem();
+                break;  
+                
+            case QUIT:
+                wantToQuit = quit(command);
+                break;
+                         
         }
         return wantToQuit;
     }
@@ -158,7 +167,17 @@ public class Game
             System.out.println(currentRoom.getLongDescription());
         }
     }
-
+    
+    private void pickupItem()
+    {
+        System.out.println("\nYou have picked up the " + 
+        currentRoom.getHoldItem() + "\n");
+        
+        player.pickupItem(currentRoom.getHoldItem());
+        currentRoom.removeHoldItem();
+        
+    }
+    
     /** 
      * "Quit" was entered. Check the rest of the command to see
      * whether we really quit the game.
