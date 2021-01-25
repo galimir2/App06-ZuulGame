@@ -1,9 +1,8 @@
 /**
  * Write a description of class Program here.
  *
- * @author Galimir Bozmarov
- * @version (13/11/2020)
- * @modified by Galimir Bzomarov
+ * Modified and extended by Galimir Bozmarov, Max Roe and Edrick Yapi
+ * @version 2020.01.25
  */
 public class Program
 {

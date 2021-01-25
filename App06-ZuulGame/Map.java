@@ -2,8 +2,8 @@
 /**
  * Write a description of class Map here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Modified and extended by Galimir Bozmarov, Max Roe and Edrick Yapi
+ * @version 2020.01.25
  */
 public class Map
 {

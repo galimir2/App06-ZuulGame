@@ -12,10 +12,8 @@
  *  rooms, creates the parser and starts the game.  It also evaluates and
  *  executes the commands that the parser returns.
  * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
- * 
- * Modified and extended by Your name
+ * Modified and extended by Galimir Bozmarov, Max Roe and Edrick Yapi
+ * @version 2020.01.25
  */
 
 public class Game 

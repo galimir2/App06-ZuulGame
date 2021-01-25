@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Program
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Program\ here.\r\n\r\n\ @author\ Galimir\ Bozmarov\r\n\ @version\ (13/11/2020)\r\n\ @modified\ by\ Galimir\ Bzomarov\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Program\ here.\r\n\r\n\ Modified\ and\ extended\ by\ Galimir\ Bozmarov,\ Max\ Roe\ and\ Edrick\ Yapi\r\n\ @version\ 2020.01.25\r\n
 comment1.params=
 comment1.target=void\ run()
 comment1.text=\r\n\ This\ class\ creates\ and\ runs\ an\ instance\ of\r\n\ the\ StockApp\ class\r\n
