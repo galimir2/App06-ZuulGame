@@ -136,7 +136,6 @@ public class Game
         System.out.println("Your command words are:");
         parser.showCommands();
         System.out.println("Type 'look' to look around for items in the room.");
-        System.out.println("Type 'pick' to pick up the item in the room.");
         System.out.println("Type 'go' and the direction to where you would like to move.");
         System.out.println("Type 'take' to pickup the item that is in the room.");
         System.out.println("Type 'quit' to quit the game.");

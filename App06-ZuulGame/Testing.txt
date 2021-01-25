@@ -1,0 +1,199 @@
+Type 'help' if you need help.
+
+You are outside, east of you is the park.
+ West of you is the University.
+ North of you is McDonalds.
+ South to go back to home.
+Exits: east south north west
+> quit
+Thank you for playing.  Good bye.
+Program.run();
+
+Welcome to the Zombie Apocalypse!
+Zombie Apocalypse is an amazing game.
+You have woken up in a world that has been overtaken by zombies.
+Type 'help' if you need help.
+
+You are currently in your Home. If you go north you can go outside.
+Exits: north
+> look
+Items in room: AXE
+> take
+
+You have picked up the AXE
+
+Your Statistics. 
+Score =  5
+Health = 100
+> go south
+There is no door!
+> go north
+You are outside, east of you is the park.
+ West of you is the University.
+ North of you is McDonalds.
+ South to go back to home.
+Exits: east south north west
+> go east
+You are now in the park. You see no other direction, but to go back.
+ West to go back to outside.
+Exits: west
+> go west
+You are outside, east of you is the park.
+ West of you is the University.
+ North of you is McDonalds.
+ South to go back to home.
+Exits: east south north west
+> go home
+There is no door!
+> help
+You are lost. You are alone. You wander
+around at your home town.
+
+Your command words are:
+help  take  go  quit  look  
+Type 'look' to look around for items in the room.
+Type 'pick' to pick up the item in the room.
+Type 'go' and the direction to where you would like to move.
+Type 'take' to pickup the item that is in the room.
+Type 'quit' to quit the game.
+> hello
+I don't know what you mean...
+> go
+Go where?
+> go north
+You are now at McDonalds. East of you is the pub.
+ South to go back to outside.
+Exits: east south
+> go south
+You are outside, east of you is the park.
+ West of you is the University.
+ North of you is McDonalds.
+ South to go back to home.
+Exits: east south north west
+> go west
+You are now at the University. You see no other direction, but to go back.
+ East to go back to outside.
+Exits: east
+> look
+Items in room: BACKPACK
+> take
+
+You have picked up the BACKPACK
+
+Your Statistics. 
+Score =  25
+Health = 100
+> go east
+You are outside, east of you is the park.
+ West of you is the University.
+ North of you is McDonalds.
+ South to go back to home.
+Exits: east south north west
+> go north
+You are now at McDonalds. East of you is the pub.
+ South to go back to outside.
+Exits: east south
+> look
+Items in room: BURGER
+> take
+
+You have picked up the BURGER
+
+Your Statistics. 
+Score =  30
+Health = 100
+> go east
+You are now at the pub. South of you is Tesco.
+ West to go back to McDonalds.
+Exits: south west
+> look
+Items in room: DRINK
+> take
+
+You have picked up the DRINK
+
+Your Statistics. 
+Score =  35
+Health = 100
+> go south
+You are now at Tesco. South of you is an Abandoned House.
+ North to go back to pub.
+Exits: south north
+> look
+Items in room: DRINK
+> take
+
+You have picked up the DRINK
+
+Your Statistics. 
+Score =  40
+Health = 100
+> go south
+You are now at the Abandoned House. West of you is a Petrol Station.
+ North to go back to Tesco.
+Exits: north west
+> look
+Items in room: TORCH
+> take
+
+You have picked up the TORCH
+
+Your Statistics. 
+Score =  70
+Health = 100
+> go west
+You are now at the Petrol Station. North of you is the Barbers.
+ East to go back to Abandoned House.
+Exits: east north
+> look
+Items in room: NONE
+> take
+
+You have picked up the NONE
+
+Your Statistics. 
+Score =  70
+Health = 100
+> go north
+You are now at the Barbers. North of you is the Cinema.
+ South to go back to Petrol Station.
+Exits: south north
+> go north
+You are now at the Cinema. North of you is the Office.
+ South to go back to barbers.
+Exits: south north
+> go north
+You are now at the Office. West of you is the Train Station.
+ South to go back to cinema.
+Exits: south west
+> go weset
+There is no door!
+> go west
+You are now at the Train Station. South of you is the Police Station.
+ East to go back to office.
+Exits: east south
+> go south
+You are now at Police Station. East of you is a Car Park.
+ North to go back to Train Station.
+Exits: east north
+> go east
+You are now at the Car Park. East of you are the woods.
+ West to go back to Police Station.
+Exits: east west
+> go east
+You are reached the final destination, now you can escape the city that was overtaken by the zombies.
+ Type 'quit' to end game! .
+Exits:
+> quit
+Thank you for playing.  Good bye.
+
+Welcome to the Zombie Apocalypse!
+Zombie Apocalypse is an amazing game.
+You have woken up in a world that has been overtaken by zombies.
+Type 'help' if you need help.
+
+You are reached the final destination, now you can escape the city that was overtaken by the zombies.
+ Type 'quit' to end game! .
+Exits:
+> quit
+Thank you for playing.  Good bye.
